@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <section class="navbar navbar__top">
+  <section class="navbar navbar__top navbar__mobile--fixed">
     <div class="container">
       <div class="navbar-wrapper">
         <a class="navbar__link" href="#">
@@ -23,11 +23,11 @@
         </a>
         <div class="navbar__nav">
           <ul class="navbar__list">
-            <li class="navbar__item">Рекомендации</li>
-            <li class="navbar__item">Книги</li>
-            <li class="navbar__item">Блог</li>
+            <li class="navbar__item"><a href="#" class="navbar__link">Рекомендации</a></li>
+            <li class="navbar__item"><a href="#" class="navbar__link">Книги</a></li>
+            <li class="navbar__item"><a href="#" class="navbar__link">Блог</a></li>
           </ul>
-          <button class="navbar__button">Получить
+          <button class="navbar__button"><a href="#" class="navbar__button-link">Получить</a>
           </button>
         </div>
         <!-- /.navbar__nav -->
@@ -45,9 +45,9 @@
   <!-- /.navbar -->
   <section class="menu">
     <div class="container">
-      <div class="menu-wrapper">
+      <div class="menu-wrapper menu__bottom">
         <div class="menu__info">
-          <strong class="menu__name"><strong class="menu__part">Design Theory:</strong><br>The Psychology of<br>Graphic Design Pricing</strong>
+          <span class="menu__name"><span class="menu__part">Design Theory:</span><br>The Psychology of<br>Graphic Design Pricing</span>
           <p class="menu__author">Книга Мишеля Янга</p>
           <p class="menu__description">
             Спустя 15 лет я управляю собственной студией, 
@@ -56,29 +56,165 @@
             ценообразования на творческую работу.
           </p>
           <div class="menu__buttons">
-            <button class="menu__button menu__bay-button">купить сейчас</button>
-            <button class="menu__button menu__read-button">читать демо</button>
+            <button class="menu__button menu__bay-button"><a href="#" class="menu__link">купить сейчас</a></button>
+            <button class="menu__button menu__read-button"><a href="#" class="menu__link">читать демо</a></button>
           </div>
           <!-- /.menu__buttons -->
         </div>
         <!-- /.menu__info -->
         <div class="menu__view">
-          <img class="menu__img" src="img/main-section/Header Image.jpg" alt="icon: Book">
+          <img class="menu__img" src="img/main-section/book.jpg" alt="icon: Book">
         </div>
       </div>
     </div>
     <!-- /.container -->
   </section>
   <!-- /.menu -->
+  <div class="books">
+    <div class="container">
+      <div class="books-wrapper">
+        <div class="books-recomended">
+          <h3 class="books__title">Рекомендации</h3>
+            <div class="books-container">
+              <div class="books-card books__card">
+                <div class="books__view">
+                  <img class="books__img" src="img/book-card/abstract.png" alt="icon: The World of
+                  Abstract Art">
+                </div>
+                <!-- /.books__view -->
+                <div class="books__info">
+                  <span class="books__name">The World of
+                    Abstract Art
+                  </span>
+                  <p class="books__genre">Art & Design</p>
+                  <span class="books__price">$25.00</span>
+                  <div class="books__actions">
+                    <a class="books__link" href="#"><button class="button books__button">Купить</button></a>
+                    <img class="books__favorites" src="img/book-card/heart.svg" alt="icon: favorites">
+                  </div>
+                </div>
+                <!-- /.books__info --> 
+              </div>
+              <!-- /.books__card -->
+              <div class="books-card books__card">
+                <div class="books__view">
+                  <img class="books__img" src="img/book-card/educated.png" alt="icon: Educated a Memoir">
+                </div>
+                <!-- /.books__view -->
+                <div class="books__info">
+                  <span class="books__name">Educated :<br>
+                    a Memoir
+                  </span>
+                  <p class="books__genre">Education</p>
+                  <span class="books__price">$28.00</span>
+                  <div class="books__actions">
+                    <a class="books__link" href="#">
+                      <button class="button books__button">Купить</button>
+                    </a>
+                    <img class="books__favorites" src="img/book-card/heart.svg" alt="icon: favorites">
+                  </div>
+                </div>
+                <!-- /.books__info --> 
+              </div>
+              <!-- /.books__card -->
+              <div class="books-card books__card">
+                <div class="books__view">
+                  <img class="books__img" src="img/book-card/blueflower.png" alt="icon: The Blue
+                  Flowers Ray">
+                </div>
+                <!-- /.books__view -->
+                <div class="books__info">
+                  <span class="books__name">The Blue
+                    Flowers Ray…</span>
+                  <p class="books__genre">Novel</p>
+                  <span class="books__price">$19.50</span>
+                  <div class="books__actions">
+                    <a class="books__link" href="#"><button class="button books__button">Купить</button></a>
+                    <img class="books__favorites" src="img/book-card/heart.svg" alt="icon: favorites">
+                  </div>
+                </div>
+                <!-- /.books__info --> 
+              </div>
+              <!-- /.books__card -->
+              <div class="books-card books__card">
+                <div class="books__view">
+                  <img class="books__img" src="img/book-card/where.png" alt="icon: There There :
+                  a Novel by TO">
+                </div>
+                <!-- /.books__view -->
+                <div class="books__info">
+                  <span class="books__name">There There :
+                    a Novel by TO
+                  </span>
+                  <p class="books__genre">Novel</p>
+                  <span class="books__price">$20.00</span>
+                  <div class="books__actions">
+                    <a class="books__link" href="#"><button class="button books__button">Купить</button></a>
+                    <img class="books__favorites" src="img/book-card/heart.svg" alt="icon: favorites">
+                  </div>
+                </div>
+                <!-- /.books__info --> 
+              </div>
+              <!-- /.books__card -->
+              <div class="books-card books__card">
+                <div class="books__view">
+                  <img class="books__img" src="img/book-card/work.png" alt="icon: The World of
+                  Abstract Art">
+                </div>
+                <!-- /.books__view -->
+                <div class="books__info">
+                  <span class="books__name">WMNDFL : 
+                    The 
+                  </span>
+                  <p class="books__genre">Business</p>
+                  <span class="books__price">$23.00</span>
+                  <div class="books__actions">
+                    <a class="books__link" href="#"><button class="button books__button">Купить</button></a>
+                    <img class="books__favorites" src="img/book-card/heart.svg" alt="icon: favorites">
+                  </div>
+                </div>
+                <!-- /.books__info --> 
+              </div>
+              <!-- /.books__card -->
+              <div class="books-card books__card">
+                <div class="books__view">
+                  <img class="books__img" src="img/book-card/making.png" alt="icon: The World of
+                  Abstract Art">
+                </div>
+                <!-- /.books__view -->
+                <div class="books__info">
+                  <span class="books__name">Making Things 
+                  </span>
+                  <p class="books__genre">Motivation</p>
+                  <span class="books__price">$25.00</span>
+                  <div class="books__actions">
+                    <a class="books__link" href="#"><button class="button books__button">Купить</button></a>
+                    <img class="books__favorites" src="img/book-card/heart.svg" alt="icon: favorites">
+                  </div>
+                </div>
+                <!-- /.books__info --> 
+              </div>
+              <!-- /.books__card -->
+            </div>
+            <!-- /.books__container -->
+            <a href="#" class="books__more-link">
+              <button class="books__more">больше рекомендаций</button>
+            </a>
+        </div>
+        <!-- /.recomended -->
+        <div class="books-top">
+          <h3 class="books__title">Топ Месяца</h3>
+          <!-- /.books-section -->
+        </div>
+        <!-- /.books-top -->
+      </div>
+      <!-- /.books-wrapper -->
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.books -->
+  <script src="js/main.js">
+  </script>
 </body>
 
 </html>
-
-<!-- Подключи все начертания шрифтов -->
-
-<!-- Добавь комменты ко всем дивам, и даже к section's ВСЕГДА!!!-->
-
-<!-- navbar__top лучше назвать navbar__wrapper, 
-так как он только обертка и кроме top у тебя ничего в navbar не будет -->
-
-<!--  располагай margin и padding в самом вверху списка стилей -->

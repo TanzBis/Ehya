@@ -32,7 +32,17 @@
   .container
     width: 95%
   //стили для того, чтобы убрать навигацию в шапке
+  body
+    padding-top: 83px
   .navbar
+    &__mobile
+      &--fixed
+      position: fixed
+      left: 0 
+      top: 0
+      right: 0
+      z-index: 10
+      background-color: $light
     &__nav
       display: none
     &-button
@@ -76,12 +86,12 @@
     width: 90%
 @media (max-width: 480px)
   .container
-    width: 280px
+    width: 89%
   body
-    padding: 0
+    padding: 0 
   .navbar
     &__top
-      margin-bottom: 54px
+      margin-bottom: 50px
     &-wrapper
       padding: 18px 0 0 0 
       align-items: center
@@ -103,6 +113,8 @@
       font-size: 16px
       line-height: 23px
       height: 161px
+    &__buttons
+      flex-wrap: wrap
     &__author
       font-size: 16px
     &__button

@@ -1,0 +1,82 @@
+.books
+  &-wrapper
+    display: flex
+    justify-content: space-between
+  &-recomended
+    display: flex
+    flex-direction: column
+    width: 748px
+  &-container
+    justify-content: space-between
+    display: flex
+    flex-wrap: wrap 
+  &-card
+    padding: 11px 15px 11px 11px
+    display: flex
+    height: 260px
+    width: 358px
+    border: 1px solid $border-color
+    border-radius: 8px
+  &__card
+    &:not(:nth-last-child(-n+2))
+      margin-bottom: 32px
+  &__view
+    margin-right: 17px
+  &__img
+    height: 100%
+    width: 100%
+    border-radius: 8px
+  &__name
+    margin: 13px 0 16px 3px
+    display: block
+    font-family: Roboto
+    font-weight: 500
+    font-size: 22px
+    line-height: 32px
+    letter-spacing: 0.2px
+    color: $description-bold
+  &__info
+    width: 144px
+  &__genre
+    margin: 0 0 24px 3px
+    font-size: 16px
+    line-height: 22px
+    color: $description-bold
+  &__price
+    margin: 0 0 24px 3px
+    display: block
+    font-family: Roboto Condensed
+    font-weight: bold
+    font-size: 20px
+    line-height: 24px
+    color: $blue
+  &__title
+    margin: 0 0 30px 0
+    font-family: Roboto Condensed
+    font-style: normal
+    font-weight: bold
+    font-size: 32px
+    line-height: 40px
+  &__actions
+    display: flex
+    justify-content: space-between
+  &__favorites
+    height: 21px
+    width: 21px
+    align-self: center
+    margin-bottom: 2px
+  &__more
+    margin-top: 27px
+    height: 72px
+    width: 100%
+    font-family: Roboto Condensed
+    font-weight: bold
+    font-size: 16px
+    line-height: 20px
+    text-transform: uppercase
+    color: $blue
+    border-radius: 8px
+    border: none
+  &__top
+    display: flex
+    flex-direction: column
