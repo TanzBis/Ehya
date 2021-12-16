@@ -363,6 +363,14 @@ img {
      object-fit: cover;
 }
 
+a {
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+
 .button {
   background-color: #183B56;
   border: none;
@@ -370,9 +378,36 @@ img {
   border-radius: 20px;
   color: #fff;
   font-weight: bold;
+  width: 101px;
+  height: 36px;
 }
 
-.navbar__top {
+.price {
+  display: block;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  color: #1565D8;
+}
+
+.name {
+  display: inline-block;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: 0.2px;
+  color: #183B56;
+}
+
+.genre {
+  font-size: 16px;
+  line-height: 22px;
+  color: #183B56;
+}
+
+.navbar--top {
   margin-bottom: 69px;
 }
 
@@ -459,7 +494,7 @@ img {
 .menu__name {
   margin: 0 0 28px 0;
   display: block;
-  font-family: Roboto Condensed;
+  font-family: 'Roboto Condensed', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 48px;
@@ -564,14 +599,14 @@ img {
 }
 
 .books-card {
-  padding: 11px 15px 11px 11px;
+  padding: 11px 15px 10px 11px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 260px;
-  width: 358px;
   border: 1px solid #ECEEF2;
   border-radius: 8px;
+  height: 260px;
+  width: 358px;
 }
 
 .books__card:not(:nth-last-child(-n+2)) {
@@ -580,23 +615,19 @@ img {
 
 .books__view {
   margin-right: 17px;
+  height: 238px;
+  width: 160px;
 }
 
 .books__img {
   height: 100%;
   width: 100%;
-  border-radius: 8px;
+  border-radius: 5px;
 }
 
 .books__name {
   margin: 13px 0 16px 3px;
-  display: block;
-  font-family: Roboto;
-  font-weight: 500;
-  font-size: 22px;
-  line-height: 32px;
-  letter-spacing: 0.2px;
-  color: #183B56;
+  width: 152px;
 }
 
 .books__info {
@@ -605,24 +636,15 @@ img {
 
 .books__genre {
   margin: 0 0 24px 3px;
-  font-size: 16px;
-  line-height: 22px;
-  color: #183B56;
 }
 
 .books__price {
   margin: 0 0 24px 3px;
-  display: block;
-  font-family: Roboto Condensed;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 24px;
-  color: #1565D8;
 }
 
 .books__title {
   margin: 0 0 30px 0;
-  font-family: Roboto Condensed;
+  font-family: 'Roboto Condensed', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
@@ -639,7 +661,7 @@ img {
 }
 
 .books__favorites {
-  height: 21px;
+  height: 18px;
   width: 21px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -651,7 +673,7 @@ img {
   margin-top: 27px;
   height: 72px;
   width: 100%;
-  font-family: Roboto Condensed;
+  font-family: 'Roboto Condensed', sans-serif;
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
@@ -659,9 +681,10 @@ img {
   color: #1565D8;
   border-radius: 8px;
   border: none;
+  background-color: #E8F0FB;
 }
 
-.books__top {
+.books-top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -669,6 +692,70 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.books-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 312px;
+  height: 178px;
+}
+
+.books__block:not(:last-of-type) {
+  margin-bottom: 36px;
+}
+
+.books__block:last-of-type {
+  margin-bottom: 26px;
+}
+
+.books__present {
+  margin-right: 25px;
+  height: 177px;
+  width: 120px;
+}
+
+.books-section {
+  padding: 24px 24px 0 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #F7F9F9;
+  border-radius: 8px;
+}
+
+.books__appellation {
+  margin-top: 9px;
+  margin-bottom: 15px;
+  width: 166px;
+}
+
+.books__pricetag {
+  margin-bottom: 22px;
+}
+
+.books__top {
+  width: 360px;
+}
+
+.books__best {
+  padding: 25px 0 26px 0;
+  text-align: center;
+  width: 100%;
+  border-top: 2px solid #ECEEF2;
+  text-transform: uppercase;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #1565D8;
+  text-decoration: none;
 }
 
 @media (max-width: 1200px) {
@@ -688,6 +775,76 @@ img {
   }
   .menu__info {
     padding-bottom: 28px;
+  }
+  .books-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .books-container {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .books-recomended {
+    width: 95%;
+  }
+  .books-card {
+    width: 295px;
+    height: 220px;
+  }
+  .books__name {
+    font-size: 16px;
+  }
+  .books__genre {
+    margin-bottom: 10px;
+  }
+  .books__more {
+    margin: 0 0 20px 0;
+  }
+  .books__view {
+    height: 185px;
+    width: 120px;
+  }
+  .books-top {
+    width: 95%;
+  }
+  .books__block {
+    width: 212px;
+    height: 142px;
+    margin-right: 5px;
+  }
+  .books-section {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    padding: 24px 10px 0 10px;
+  }
+  .books__present {
+    width: 95px;
+    height: 142px;
+    margin-right: 10px;
+  }
+  .books__appellation {
+    font-size: 12px;
+    width: 100px;
+  }
+  .price {
+    margin-bottom: 10px;
+  }
+  .name {
+    line-height: 24px;
+    margin-bottom: 10px;
   }
 }
 
@@ -710,6 +867,27 @@ img {
     width: 450px;
   }
   .menu__button {
+    font-size: 16px;
+  }
+  .books-container {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .books-card {
+    height: 220px;
+    width: 345px;
+  }
+  .books__more {
+    margin-top: 24px;
+  }
+  .books-section {
+    padding: 24px 24px 0 24px;
+  }
+  .books__block {
+    width: 312px;
+  }
+  .books__appellation {
+    width: 186px;
     font-size: 16px;
   }
 }
@@ -793,11 +971,21 @@ img {
   .menu__bay-button {
     margin: 0 0 30px 0;
   }
-}
-
-@media (max-width: 576px) {
   .container {
     width: 90%;
+  }
+  .books__card {
+    width: 290px;
+  }
+  .books__card:nth-of-type(5) {
+    margin-bottom: 36px;
+  }
+  .books__name {
+    font-size: 16px;
+    width: 140px;
+  }
+  .books__block {
+    width: 28 0px;
   }
 }
 
@@ -808,14 +996,17 @@ img {
   body {
     padding: 0;
   }
-  .navbar__top {
-    margin-bottom: 50px;
+  .navbar--top {
+    margin-bottom: 36px;
   }
   .navbar-wrapper {
-    padding: 18px 0 0 0;
+    padding: 18px 0 14px 0;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .menu__bottom {
+    margin-bottom: 56px;
   }
   .menu__info {
     padding-bottom: 36px;
@@ -842,6 +1033,9 @@ img {
   .menu__buttons {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
   .menu__author {
     font-size: 16px;
@@ -855,6 +1049,133 @@ img {
   }
   .menu__bay-button {
     margin-bottom: 15px;
+  }
+  .books-recomended {
+    width: 280px;
+  }
+  .books-top {
+    width: 290px;
+  }
+  .books-section {
+    width: 100%;
+    padding: 26px 26px 0 15px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .books-card {
+    padding: 11px 18px 32px 18px;
+  }
+  .books__card {
+    width: 280px;
+    height: 312px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .books__card:not(:first-of-type) {
+    display: none;
+  }
+  .books__card:not(:nth-last-child(-n+2)) {
+    margin-bottom: 26px;
+  }
+  .books__title {
+    margin-bottom: 72px;
+    text-align: center;
+    line-height: 36px;
+    font-size: 28px;
+  }
+  .books__title--top {
+    margin-bottom: 36px;
+  }
+  .books__info {
+    width: 242px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .books__actions {
+    margin-right: 20px;
+    width: 135px;
+  }
+  .books__bay {
+    width: 115px;
+    margin-right: 20px;
+  }
+  .books__more {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin: 0 0 56px 0;
+    height: 48px;
+    width: 280px;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: none;
+  }
+  .books__name {
+    margin: 0 0 12px 0;
+    text-align: center;
+    width: 242px;
+    font-size: 20px;
+  }
+  .books__genre {
+    margin: 0 0 16px 0;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .books__price {
+    margin: 0 10px 20px 0;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .books__view {
+    width: 95px;
+    height: 137px;
+    margin: -36px 0 19px 0;
+  }
+  .books__pricetag {
+    display: inline-block;
+    margin-bottom: 14px;
+  }
+  .books__appellation {
+    margin: 4px 0 12px 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+    width: 108px;
+  }
+  .books__present {
+    height: 142px;
+    width: 95px;
+    margin-right: 14px;
+  }
+  .books__block:last-of-type {
+    margin-bottom: 40px;
+  }
+  .books__best {
+    padding: 20px 0 20px 0;
+    line-height: 18px;
+    margin-left: 8px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .books__information {
+    width: 108px;
   }
 }
 /*# sourceMappingURL=style.css.map */

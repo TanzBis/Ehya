@@ -12,6 +12,50 @@
       width: 100%
     &__info
       padding-bottom: 28px
+  // стили для блока с книгами
+  .books
+    &-wrapper
+      flex-direction: column
+      align-items: center
+    &-container
+      justify-content: space-evenly
+    &-recomended
+      width: 95%
+    &-card
+      width: 295px
+      height: 220px
+    &__name
+      font-size: 16px
+    &__genre
+      margin-bottom: 10px
+    &__more
+      margin: 0 0 20px 0
+    &__view
+      height: 185px
+      width: 120px
+    &-top
+      width: 95%
+    &__block
+      width: 212px
+      height: 142px
+      margin-right: 5px
+    &-section
+      flex-direction: row
+      flex-wrap: wrap
+      justify-content: space-evenly
+      padding: 24px 10px 0 10px
+    &__present
+      width: 95px
+      height: 142px    
+      margin-right: 10px
+    &__appellation
+      font-size: 12px
+      width: 100px
+  .price
+    margin-bottom: 10px
+  .name
+    line-height: 24px
+    margin-bottom: 10px
 @media (max-width:992px)
   .container
     width: 95%
@@ -28,6 +72,23 @@
       width: 450px
     &__button
       font-size: 16px
+  // стили для блока с книгами
+  .books
+    &-container
+      justify-content: space-around
+    &-card
+      height: 220px
+      width: 345px
+    &__more
+      margin-top: 24px
+    &-section
+      padding: 24px 24px 0 24px
+    &__block
+      width: 312px
+    &__appellation
+      width: 186px
+      font-size: 16px
+
 @media (max-width:767px) 
   .container
     width: 95%
@@ -81,21 +142,35 @@
     &__bay
       &-button
         margin: 0 0 30px 0
-@media (max-width:576px) 
+  @media (max-width:576px) 
   .container
     width: 90%
+  // стили для блока с книгами
+  .books
+    &__card
+      width: 290px
+      &:nth-of-type(5)
+        margin-bottom: 36px
+    &__name
+      font-size: 16px
+      width: 140px
+    &__block
+      width: 28 0px
+
 @media (max-width: 480px)
   .container
     width: 89%
   body
     padding: 0 
   .navbar
-    &__top
-      margin-bottom: 50px
+    &--top
+      margin-bottom: 36px
     &-wrapper
-      padding: 18px 0 0 0 
+      padding: 18px 0 14px 0 
       align-items: center
   .menu
+    &__bottom
+      margin-bottom: 56px
     &__info 
       padding-bottom: 36px
     &__view
@@ -115,6 +190,7 @@
       height: 161px
     &__buttons
       flex-wrap: wrap
+      justify-content: space-evenly
     &__author
       font-size: 16px
     &__button
@@ -126,3 +202,92 @@
     &__bay
       &-button
         margin-bottom: 15px
+    //стили для блока с книгами
+  .books
+    &-recomended
+      width: 280px
+    &-top
+      width: 290px
+    &-section
+      width: 100%
+      padding: 26px 26px 0 15px
+      align-items: center
+    &-card
+      padding: 11px 18px 32px 18px
+    &__card
+      width: 280px
+      height: 312px
+      flex-direction: column
+      align-items: center
+      &:not(:first-of-type)
+        display: none
+      &:not(:nth-last-child(-n+2))
+        margin-bottom: 26px
+    &__title
+      margin-bottom: 72px
+      text-align: center
+      line-height: 36px
+      font-size: 28px
+      &--top
+        margin-bottom: 36px
+    &__info
+      width: 242px
+      display: flex
+      flex-direction: column
+      align-items: center
+    &__actions
+      margin-right: 20px
+      width: 135px
+    &__bay
+      width: 115px 
+      margin-right: 20px
+    &__more
+      align-self: center
+      margin: 0 0 56px 0
+      height: 48px
+      width: 280px
+      font-size: 16px
+      line-height: 20px
+      text-transform: none
+    &__name
+      margin: 0 0 12px 0
+      text-align: center
+      width: 242px
+      font-size: 20px
+    &__genre
+      margin: 0 0 16px 0 
+      font-size: 14px
+      line-height: 20px
+    &__price
+      margin: 0 10px 20px 0 
+      font-weight: bold
+      font-size: 16px
+      line-height: 20px
+    &__view
+      width: 95px
+      height: 137px
+      margin: -36px 0 19px 0
+    &__pricetag
+      display: inline-block
+      margin-bottom: 14px 
+    &__appellation
+      margin: 4px 0 12px 0 
+      font-family: 'Roboto Condensed', sans-serif
+      font-size: 16px
+      line-height: 24px
+      font-weight: bold
+      width: 108px
+    &__present
+      height: 142px
+      width: 95px
+      margin-right: 14px
+    &__block
+      &:last-of-type
+        margin-bottom: 40px 
+    &__best
+      padding: 20px 0 20px 0
+      line-height: 18px
+      margin-left: 8px
+      align-self: center
+    &__information
+      width: 108px
