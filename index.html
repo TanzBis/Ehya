@@ -10,6 +10,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;500&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="css">
   <link rel="stylesheet" href="css/style.css">
   <title>Ehya</title>
 </head>
@@ -27,8 +28,7 @@
             <li class="navbar__item"><a href="#" class="navbar__link">Книги</a></li>
             <li class="navbar__item"><a href="#" class="navbar__link">Блог</a></li>
           </ul>
-          <button class="navbar__button"><a href="#" class="navbar__button-link">Получить</a>
-          </button>
+          <a href="#" class="navbar__button">Получить</a>
         </div>
         <!-- /.navbar__nav -->
         <div class="navbar-button navbar__burger">
@@ -56,8 +56,8 @@
             ценообразования на творческую работу.
           </p>
           <div class="menu__buttons">
-            <button class="menu__button menu__bay-button"><a href="#" class="menu__link">купить сейчас</a></button>
-            <button class="menu__button menu__read-button"><a href="#" class="menu__link">читать демо</a></button>
+            <a href="#" class="menu__button menu__buy">купить сейчас</a>
+            <a href="#" class="menu__button menu__read">читать демо</a>
           </div>
           <!-- /.menu__buttons -->
         </div>
@@ -70,7 +70,7 @@
     <!-- /.container -->
   </section>
   <!-- /.menu -->
-  <div class="books">
+  <section class="books books--mb">
     <div class="container">
       <div class="books-wrapper">
         <div class="books-recomended">
@@ -89,7 +89,7 @@
                   <p class="genre books__genre">Art & Design</p>
                   <span class="price books__price">$25.00</span>
                   <div class="books__actions">
-                    <a class="books__link" href="#"><button class="button books__bay">Купить</button></a>
+                    <button class="button books__buy">Купить</button>
                     <img class="books__favorites" src="img/book-card/heart.svg" alt="icon: favorites">
                   </div>
                 </div>
@@ -108,9 +108,7 @@
                   <p class="genre books__genre">Education</p>
                   <span class="price books__price">$28.00</span>
                   <div class="books__actions">
-                    <a class="books__link" href="#">
-                      <button class="button books__button">Купить</button>
-                    </a>
+                    <button class="button books__button">Купить</button>
                     <img class="books__favorites" src="img/book-card/heart.svg" alt="icon: favorites">
                   </div>
                 </div>
@@ -129,7 +127,7 @@
                   <p class="genre books__genre">Novel</p>
                   <span class="price books__price">$19.50</span>
                   <div class="books__actions">
-                    <a class="books__link" href="#"><button class="button books__button">Купить</button></a>
+                    <button class="button books__button">Купить</button>
                     <img class="books__favorites" src="img/book-card/heart.svg" alt="icon: favorites">
                   </div>
                 </div>
@@ -149,7 +147,7 @@
                   <p class="genre books__genre">Novel</p>
                   <span class="price books__price">$20.00</span>
                   <div class="books__actions">
-                    <a class="books__link" href="#"><button class="button books__button">Купить</button></a>
+                    <button class="button books__button">Купить</button>
                     <img class="books__favorites" src="img/book-card/heart.svg" alt="icon: favorites">
                   </div>
                 </div>
@@ -168,7 +166,7 @@
                   <p class="genre books__genre">Business</p>
                   <span class="price books__price">$23.00</span>
                   <div class="books__actions">
-                    <a class="books__link" href="#"><button class="button books__button">Купить</button></a>
+                    <button class="button books__button">Купить</button>
                     <img class="books__favorites" src="img/book-card/heart.svg" alt="icon: favorites">
                   </div>
                 </div>
@@ -186,7 +184,7 @@
                   <p class="genre books__genre">Motivation</p>
                   <span class="price books__price">$25.00</span>
                   <div class="books__actions">
-                    <a class="books__link" href="#"><button class="button books__button">Купить</button></a>
+                    <button class="button books__button">Купить</button>
                     <img class="books__favorites" src="img/book-card/heart.svg" alt="icon: favorites">
                   </div>
                 </div>
@@ -214,10 +212,7 @@
                   <span class="name books__appellation">Sprint : Solve,
                     Test in 5 Days</span>
                   <span class="price books__pricetag">$23.00</span>
-                  <div class="books__actions">
-                    <a class="books__link" href="#"><button class="button books__button">Купить</button></a>
-                  </div>
-                  <!-- /.books__actions -->
+                  <button class="button books__button">Купить</button>
                 </div>
                 <!-- /.books__info -->
               </div>
@@ -232,10 +227,7 @@
                   <span class="name books__appellation">Hacking Growth
                     Break Problem</span>
                   <span class="price books__pricetag">$23.00</span>
-                  <div class="books__actions">
-                    <a class="books__link" href="#"><button class="button books__button">Купить</button></a>
-                  </div>
-                  <!-- /.books__actions -->
+                  <button class="button books__button">Купить</button>
                 </div>
                 <!-- /.books__info -->
               </div>
@@ -249,10 +241,7 @@
                 <div class="books__information">
                   <span class="name books__appellation">Very Nice a Novel by Mercy</span>
                   <span class="price books__pricetag">$23.00</span>
-                  <div class="books__actions">
-                    <a class="books__link" href="#"><button class="button books__button">Купить</button></a>
-                  </div>
-                  <!-- /.books__actions -->
+                  <button class="button books__button">Купить</button>
                 </div>
                 <!-- /.books__info -->
               </div>
@@ -266,10 +255,7 @@
                 <div class="books__information">
                   <span class="name books__appellation">Hooked : How to Build Products</span>
                   <span class="price books__pricetag">$23.00</span>
-                  <div class="books__actions">
-                    <a class="books__link" href="#"><button class="button books__button">Купить</button></a>
-                  </div>
-                  <!-- /.books__actions -->
+                  <button class="button books__button">Купить</button>
                 </div>
                 <!-- /.books__info -->
               </div>
@@ -285,10 +271,58 @@
       <!-- /.books-wrapper -->
     </div>
     <!-- /.container -->
-  </div>
+  </section>
   <!-- /.books -->
+  <section class="categories">
+    <div class="container">
+      <div class="categories-slider">
+        <div class="categories__card">
+          <div class="categories__view">
+            <img src="img/catogories/shape.svg" alt="icon: shape" class="categories__img">
+          </div>
+          <!-- /.categories__view -->
+          <h3 class="categories__title">Бизнес & Финансы</h3>
+          <a class="categories__description">Книги про мир бизнеса</a>
+        </div>
+        <!-- /.categories__card -->
+        <div class="categories__card">
+          <div class="categories__view">
+            <img src="img/catogories/diamond.svg" alt="icon: shape" class="categories__img">
+          </div>
+          <!-- /.categories__view -->
+          <h3 class="categories__title">Самомотиватия</h3>
+          <a class="categories__description">Книги о мотивации</a>
+        </div>
+        <!-- /.categories__card -->
+        <div class="categories__card">
+          <div class="categories__view">
+            <img src="img/catogories/book.svg" alt="icon: shape" class="categories__img">
+          </div>
+          <!-- /.categories__view -->
+          <h3 class="categories__title">Романы Теленовеллы</h3>
+          <a class="categories__description">Книги с крутыми историями</a>
+        </div>
+        <!-- /.categories__card -->
+        <div class="categories__card">
+          <div class="categories__view">
+            <img src="img/catogories/group.svg" alt="icon: shape" class="categories__img">
+          </div>
+          <!-- /.categories__view -->
+          <h3 class="categories__title">Навыки будущего</h3>
+          <a class="categories__description">Книги для самоподготовка</a>
+        </div>
+        <!-- /.categories__card -->
+      </div>
+      <!-- /.categories-slider -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /.categories -->
+  <script src="js/swiper-bundle.min.js"></script>
   <script src="js/main.js">
   </script>
 </body>
 
 </html>
+
+

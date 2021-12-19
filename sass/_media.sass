@@ -56,6 +56,20 @@
   .name
     line-height: 24px
     margin-bottom: 10px
+  // Стили для блока со слайдером с категориями
+  .categories
+    &-slider
+      flex-wrap: wrap
+      padding-top: 55px
+    &__card
+      width: 230px
+    &__title
+      font-weight: bold
+      font-size: 16px
+      line-height: 20px
+    &__description
+      font-size: 12px
+      line-height: 20px
 @media (max-width:992px)
   .container
     width: 95%
@@ -88,6 +102,16 @@
     &__appellation
       width: 186px
       font-size: 16px
+  // Стили для блока со слайдером с категориями
+  .categories
+    &__card
+      width: 180px
+    &__title
+      text-align: center
+      width: 112px
+      height: 40px
+      font-size: 16px
+      line-height: 20px
 
 @media (max-width:767px) 
   .container
@@ -133,15 +157,23 @@
     &__view
       width: 576px
     &__buttons
-      display: flex
-      justify-content: center
-      flex-wrap: wrap
+      flex-direction: column
+      align-items: center
     &__button
       width: 85%
-      height: 80px
-    &__bay
-      &-button
-        margin: 0 0 30px 0
+    &__buy
+        margin: 0 0 15px 0
+  // Стили для блока со слайдером с категориями
+  .categories
+    &-slider
+      justify-content: space-evenly
+    &__card
+      width: 250px
+      margin-bottom: 20px
+    &__description
+      width: 120px
+      text-align: center
+  
   @media (max-width:576px) 
   .container
     width: 90%
@@ -155,9 +187,12 @@
       font-size: 16px
       width: 140px
     &__block
-      width: 28 0px
+      width: 280px
+  // Стили для блока со слайдером с категориями
+  .categories
 
-@media (max-width: 480px)
+
+@media (max-width:480px)
   .container
     width: 89%
   body
@@ -199,9 +234,8 @@
       font-size: 16px
       line-height: 22px
       padding: 9px 9px
-    &__bay
-      &-button
-        margin-bottom: 15px
+    &_buy
+      margin-bottom: 15px
     //стили для блока с книгами
   .books
     &-recomended
@@ -235,10 +269,7 @@
       display: flex
       flex-direction: column
       align-items: center
-    &__actions
-      margin-right: 20px
-      width: 135px
-    &__bay
+    &__buy
       width: 115px 
       margin-right: 20px
     &__more
@@ -291,3 +322,24 @@
       align-self: center
     &__information
       width: 108px
+    &--mb
+      margin-bottom: 56px
+  // Стили для блока со слайдером с категориями
+  .categories
+    &-slider
+      margin: 0 auto
+      justify-content: space-between
+      width: 290px
+    &__card
+      margin-bottom: 10px
+      padding: 20px 13px
+      width: 140px
+      height: 182px
+    &__view
+      width: 36px
+      height: 36px
+      margin-bottom: 16px
+    &__description
+      width: 100px
+
+    
