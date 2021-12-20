@@ -1,13 +1,13 @@
-const swiper = new Swiper('.swiper', {
-  // Optional parameters
+var swiper = new Swiper(".categories-slider", {
   loop: true,
-
-  // Navigation arrows
+  clickable: true,
+  
   navigation: {
-    nextEl: '.categories__button--next',
-    prevEl: '.categories__button--prev',
+    nextEl: '.categories__button--prev',
+    prevEl: '.categories__button--next',
   },
 });
+    
 
 // var menuButton = document.querySelector(".navbar-button")
 // menuButton.addEventListener('click', function () {
