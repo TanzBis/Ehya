@@ -1,0 +1,42 @@
+.unpublished
+  position: relative
+  padding: 62px 150px 80px 150px
+  background-color: $description-bold
+  &-wrapper
+    width: 95%
+  &-books
+    width: 100%
+  &-slider
+    &__item
+      display: flex
+      justify-content: space-between
+  &__button
+    padding: 20px 20px 18px 19px
+    display: inline-block
+    border-radius: 50px
+    border: 1px solid $light
+    position: absolute
+    top: -5px
+    z-index: 100
+    &--next
+      right: 0
+    &--prev
+      right: 77px
+      transform: rotate(180deg)
+
+
+  &__title
+    margin: 0 0 60px 0
+    font-family: 'Roboto Condensed', sans-serif
+    font-style: normal
+    font-weight: bold
+    font-size: 36px
+    line-height: 48px
+    color: $light
+  &-slider
+    &__img
+      width: 204px
+      height: 298px
+      background-color: $light
+      box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.08)
+      border-radius: 8px
