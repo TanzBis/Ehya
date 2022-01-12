@@ -94,6 +94,29 @@
     &-slider
       display: flex
       justify-content: space-between
+  // Стили для секции об авторе 
+  .author
+    &-wrapper
+      width: 90%
+    &__info
+      flex-direction: column
+      margin-bottom: 20px
+    &__main
+      width: 900px
+      align-self: center
+    &__title
+      margin-bottom: 10px
+    &__description
+      width: 90%
+      height: 70px
+    &__card
+      width: 280px
+      &:not(:last-of-type)
+        margin-right: 28px
+    &__container
+      justify-content: start
+
+
 @media (max-width:992px)
   .container
     width: 95%
@@ -140,6 +163,19 @@
   .unpublished
     &-slider
       justify-content: space-evenly
+  // Стили для секции об авторе 
+  .author
+    &__main
+      width: 700px
+      align-self: center
+    &__description
+      margin-right: 0
+      width: 100%
+      height: 70px
+    &__card
+      width: 214px
+      &:not(:last-of-type)
+        margin-right: 28px
 
 @media (max-width:767px)
   .container
@@ -208,6 +244,28 @@
     &-slider
       &__img
         width: 80%
+  // Стили для cекции об авторе
+  .author
+    &-wrapper
+      width: 100%
+    &__info
+      flex-direction: column
+      margin-bottom: 20px
+    &__main
+      width: 570px
+      align-self: center
+    &__title
+      margin-bottom: 10px
+    &__description
+      margin-right: 0
+      width: 570px
+      height: 100px
+    &__card
+      width: 270px
+      &:last-of-type
+        display: none
+      &:nth-of-type(2)
+        margin-right: 0        
 
   @media (max-width:576px)
   .container
@@ -256,14 +314,29 @@
       position: absolute
       top: 110%
       z-index: 100
-      &--next
-        right: 140px
-      &--prev
-        right: 240px
-        transform: rotate(180deg)
-    &-slider
-      &__img
-        width: 204px
+      &--next 
+  // Стили для cекции об авторе
+  .author
+    padding: 44px 0 43px 0
+    &__main
+      width: 400px
+      height: 210px
+    &__title
+      margin-bottom: 10px
+      font-weight: bold
+      font-size: 28px
+      line-height: 36px
+    &__description
+      margin-right: 0
+      width: 400px
+      height: 120px
+    &__item
+      height: 138px
+    &__card
+      width: 190px
+      &:not(:nth-of-type(2))
+        margin-right: 20px     
+  
 
 @media (max-width:480px)
   .container
@@ -450,3 +523,47 @@
       &--prev
         right: 110px
         transform: rotate(180deg)
+  .author
+    padding: 44px 0 43px 0
+    &__info
+      align-items: center
+      margin-bottom: 35px
+    &__main
+      width: 400px
+      height: 210px
+    &__description
+      margin-right: 0
+      width: 280px
+      height: 125px
+      text-align: center
+      font-size: 18px
+      line-height: 25px
+    &__item
+      width: 100%
+      height: 138px
+      margin-bottom: 16px
+    &__card
+      display: flex
+      flex-direction: column  
+      align-items: center
+      width: 140px
+    &__space
+      flex-direction: column
+      align-items: center
+    &__images
+      margin: 0 auto
+      width: 300px
+    &__name
+      font-weight: 500
+      font-size: 16px
+      line-height: 20px
+    &__books
+      &-title
+        font-weight: normal
+        font-size: 12px
+        line-height: 20px
+    &__flag
+      width: 10px
+      height: 14px
+    &__container
+      margin-top: 20px

@@ -18,8 +18,11 @@ var swiper = new Swiper(".unpublished-slider", {
   },
 
   breakpoints: {
+    1920: {
+      spaceBetween: 30,
+    },
     1440: {
-      spaceBetween: 0,
+      spaceBetween: 30,
       slidesPerView: 5,
     },
     1200: {
